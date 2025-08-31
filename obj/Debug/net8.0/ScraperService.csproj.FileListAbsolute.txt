@@ -50,3 +50,4 @@
 /Users/maximokirichuk/Scrapping-Datos/ScraperService/bin/Debug/net8.0/eventos.json
 /Users/maximokirichuk/Scrapping-Datos/ScraperService/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
 /Users/maximokirichuk/Scrapping-Datos/ScraperService/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/maximokirichuk/Scrapping-Datos/ScraperService/obj/Debug/net8.0/ScraperService.sourcelink.json

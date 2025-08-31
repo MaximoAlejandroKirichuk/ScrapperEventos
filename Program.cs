@@ -9,7 +9,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddHttpClient<EndeavorScraper>(); // Registramos el HttpClient para EndeavorScraper
         services.AddHostedService<Worker>();
 
-        // Cuando tengas el repositorio:
+        // Cuando tenga el repositorio:
         // services.AddScoped<IEventoRepository, EventoRepository>();
     })
     .Build();

@@ -19,14 +19,23 @@ public class Worker : BackgroundService
         {
             _logger.LogInformation("Scraping eventos Endeavor... {time}", DateTimeOffset.Now);
 
-            var eventos = await _scraper.GetEventosAsync();
-
-            foreach (var e in eventos)
+            
+            var listaUrls = await _scraper.GetUrlEventosAsync();
+            
+            foreach (var url in listaUrls)
             {
-                _logger.LogInformation("Evento encontrado: {nombre} - {fecha}", e.Nombre, e.FechaInicio);
+                Console.WriteLine("url a buscar mas info " + url); 
+                var linkDescripcion = await _scraper.GetLinkInscripcionAsync(url);
+                Console.WriteLine("linkDescripcion: " + linkDescripcion);
             }
+            
+            //foreach (var e in eventos)
+            //{
+              //_logger.LogInformation("Evento encontrado: {nombre} - {fecha}", e.Nombre, e.FechaInicio);
+            //}
 
             // Acá guardar en base de datos cuando implementes DAL
+            //TODO:
             // _eventoRepository.Save(eventos);
 
             await Task.Delay(TimeSpan.FromHours(6), stoppingToken);
