@@ -1,0 +1,74 @@
+# =========================
+# Build & Output
+# =========================
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.app
+*.log
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# =========================
+# JetBrains Rider
+# =========================
+.idea/
+*.sln.iml
+*.ipr
+*.iws
+*.dotSettings.user
+
+# =========================
+# Visual Studio Code
+# =========================
+.vscode/
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+packages/
+*.snupkg
+
+# =========================
+# ASP.NET / Web
+# =========================
+*.publishsettings
+*.publishproj
+*.csproj.user
+
+# =========================
+# Others
+# =========================
+*.DS_Store
+*.bak
+*.swp
+*.tmp
+*.vsidx
+*.dbmdl
+_ReSharper*/
+
+# =========================
+# Rider caches
+# =========================
+.idea/
+.idea_modules/
+.idea/.idea.ScraperService
+.idea/.idea.BE
+.idea/.idea.DAL
+.idea/.idea.BL
+
+# =========================
+# Rider temp
+# =========================
+*.iml
